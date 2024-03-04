@@ -1,0 +1,444 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: faq/fallback
+  examples: |
+    - I don't understand.
+    - Can you help me with something else?
+    - This doesn't make sense.
+    - I'm lost.
+    - What can you do?
+    - Tell me about weather 
+    - Where is this place
+    - Tell me a joke.
+    - Can you sing a song?
+    - I want a pizza.
+    - Do you like cats or dogs?
+    - Who won the last World Series?
+    - What's the meaning of life?
+    - How old are you?
+    - What's your favorite color?
+    - Can you recommend a good book to read?
+    - What's the square root of 144?
+    - asdd sadad vdff
+    - asdfvd
+    - iuon sas hkbd wqkjd
+    - casjklcwqdslnf
+    - hye
+
+- intent: faq/lastdemand_intro
+  examples: |
+    - What is Last Demand?
+    - Explain Last Demand
+    - Tell me about Last Demand
+
+- intent: faq/ld_res_debt_issue
+  examples: |
+    - How does Last Demand help resolve debt issues?
+    - What does Last Demand do to resolve debt
+
+- intent: faq/dispute_dept
+  examples: |
+    - What happens if I dispute a debt with Last Demand?
+    - Explain the dispute process
+
+- intent: faq/debt_is_not_mine
+  examples: |
+    - What should I do if I believe the debt is not mine?
+    - How to handle a debt I believe is not mine?
+    - How can I verify the debt's accuracy?
+
+- intent: faq/multiple_depts_LD
+  examples: |
+    - Can I dispute multiple debts with Last Demand?
+    - Is it possible to challenge multiple debts using the Last Demand process?
+    - How do I go about disputing several debts through Last Demand?
+    - Can I dispute more than one debt at a time with Last Demand?
+
+- intent: faq/additional_fees_with_partial_payments
+  examples: |
+    - Are there additional fees associated with partial payments?
+    - Do I need to pay extra fees when making partial payments?
+    - Are there any additional charges when I make a partial payment?
+    - Will I incur any extra costs if I choose to pay in installments?
+
+- intent: faq/partial_debt
+  examples: |
+    - What happens if I partially pay the debt but miss the deadline?
+    - If I make a partial payment but don't meet the deadline, what are the consequences?
+    - Can you explain the repercussions of partially paying a debt and then exceeding the due date?
+    - What happens if I miss the deadline after making a partial payment on my debt?
+    - Are there penalties for not meeting the deadline after making a partial payment?
+
+- intent: faq/expired_debt
+  examples: |
+    - What occurs after the expiration date of my debt?
+    - What are the consequences when my debt reaches the expiration date?
+    - Can you explain the process that follows after the debt expiration date?
+
+- intent: faq/settlement_negotiation
+  examples: |
+    - Is it possible to negotiate a settlement with Last Demand?
+    - How can I discuss a settlement with Last Demand?
+    - What's the procedure for settlement negotiation with Last Demand?
+
+- intent: faq/consequences_unresolved_debt
+  examples: |
+    - What happens if I don't resolve my debt?
+    - What are the repercussions of leaving my debt unresolved?
+    - Can you explain the potential consequences of not addressing my debt?
+
+- intent: faq/dispute_with_last_demand
+  examples: |
+    - What recourse do I have if I disagree with Last Demand's determination of my debt dispute?
+    - How can I challenge Last Demand's decision on my debt dispute?
+    - Is there a way to dispute Last Demand's resolution of my debt issue?
+    
+- intent: faq/settlement_agreement_with_last_demand
+  examples: |
+    - Can I request a settlement agreement in writing with Last Demand?
+    - How do I negotiate a settlement agreement with Last Demand?
+    - Is it possible to reach a settlement with Last Demand in writing?
+    
+- intent: faq/refusal_to_pay_last_demand_debt
+  examples: |
+    - What happens if I refuse to pay a debt that Last Demand is pursuing?
+    - What are the consequences of not paying a debt being pursued by Last Demand?
+    - Can I decline to pay a debt Last Demand is trying to collect?
+    
+- intent: faq/debt_dispute_after_filing_complaint
+  examples: |
+    - Can I dispute a debt with Last Demand if I've filed a complaint with a regulatory agency?
+    - What if I've already lodged a complaint with a regulatory agency - can I still dispute the debt with Last Demand?
+    - Is it possible to challenge a debt with Last Demand if I've already made a complaint to a regulatory agency?
+    
+- intent: faq/handling_charged_off_debts
+  examples: |
+    - How does Last Demand handle debts that have been charged off by the original creditor?
+    - What is the process for Last Demand when dealing with charged-off debts?
+    - Can Last Demand collect on debts that the original creditor has charged off?
+    
+- intent: faq/multiple_final_notices_from_collection_agencies
+  examples: |
+    - What should I do if I receive multiple Final Notices for the same debt from different collection agencies?
+    - How to handle multiple Final Notices for the same debt from different collection agencies?
+    - Can I ignore multiple Final Notices from different collection agencies for the same debt?
+    
+- intent: faq/last_demand_debts_related_to_secured_loans
+  examples: |
+    - Can Last Demand assist with debts related to secured loans, like mortgages or car loans?
+    - Does Last Demand handle debt collection for secured loans, such as mortgages and car loans?
+    - Are secured loans like mortgages and car loans within the scope of Last Demand's debt collection services?
+    
+- intent: faq/documentation_of_fees_and_interest_from_last_demand
+  examples: |
+    - Can I request documentation showing the breakdown of fees and interest on my debt from Last Demand?
+    - How do I obtain a breakdown of fees and interest on my debt from Last Demand?
+    - Is it possible to get documentation detailing fees and interest on my debt from Last Demand?
+    
+- intent: faq/preventing_debt_progression_to_last_demand
+  examples: |
+    - How can I prevent a debt from progressing to the Last Demand stage in the collection process?
+    - What steps can I take to stop a debt from reaching the Last Demand phase in the collection process?
+    - Is there a way to avoid a debt ending up in the Last Demand stage of collection?
+    
+- intent: faq/debt_dispute_identity_theft_last_demand
+  examples: |
+    - Can I dispute a debt with Last Demand if I believe the debt is the result of identity theft?
+    - What should I do if I suspect a debt is the result of identity theft and it's with Last Demand?
+    - Is it possible to challenge a debt with Last Demand if it's linked to identity theft?
+
+- intent: faq/track_debt_status
+  examples: |
+    - How can I track the status of my debt with Last Demand?
+    - What's the process for checking my debt status with Last Demand?
+    - Can I find out the status of my debt online?
+    - Is there a way to monitor my debt status with Last Demand?
+
+- intent: faq/agency_affiliation
+  examples: |
+    - Is Last Demand a government agency or affiliated with one?
+    - Does Last Demand have any governmental affiliations?
+    - Is Last Demand a part of any government department?
+    - What's the relationship between Last Demand and the government?
+
+- intent: faq/ignore_final_notice
+  examples: |
+    - What happens if I ignore the Last Demand Final Notice?
+    - Can I disregard the Final Notice from Last Demand?
+    - Are there consequences for not responding to the Final Notice?
+    - Should I be concerned if I don't act on the Final Notice?
+
+- intent: faq/online_payments
+  examples: |
+    - Can I make payments online through the Last Demand portal?
+    - Is there an option to pay my debt online on Last Demand's website?
+    - How can I submit payments through the Last Demand portal?
+    - What's the online payment process with Last Demand?
+
+- intent: faq/verify_final_notice_authenticity
+  examples: |
+    - How can I verify the authenticity of a Last Demand Final Notice?
+    - What steps can I take to confirm if a Final Notice is genuine?
+    - Is there a way to check if a Last Demand Final Notice is legitimate?
+    - What's the process for ensuring the validity of a Final Notice?
+
+- intent: faq/negotiate_settlement
+  examples: |
+    - Can I negotiate a reduced settlement amount with Last Demand?
+    - Is it possible to haggle for a lower settlement with Last Demand?
+    - Can I discuss a reduced payment with Last Demand?
+    - How can I reach a settlement agreement with Last Demand?
+
+- intent: faq/help_with_multiple_creditors
+  examples: |
+    - Can Last Demand help me with debts from multiple creditors?
+    - Does Last Demand assist with debts owed to various creditors?
+    - Can I consolidate debts from different creditors through Last Demand?
+    - Will Last Demand handle multiple debts from different creditors?
+
+- intent: faq/financial_changes_after_final_notice
+  examples: |
+    - What happens if my financial situation changes after receiving a Final Notice?
+    - If my financial circumstances change post Final Notice, what should I do?
+    - Can I update Last Demand about my financial changes after receiving the notice?
+    - Is there a process for addressing financial changes after a Final Notice?
+
+- intent: faq/payment_assistance_programs
+  examples: |
+    - Does Last Demand offer any payment assistance programs?
+    - Are there any assistance programs for debt payments with Last Demand?
+    - Can I get financial help from Last Demand?
+    - What payment support programs does Last Demand provide?
+
+- intent: faq/dispute_debt_in_collection
+  examples: |
+    - Can I dispute a debt that has already been sent to a collection agency?
+    - Is it possible to challenge a debt in collections through Last Demand?
+    - Can I dispute a debt with a collection agency via Last Demand?
+    - What's the process for disputing a debt that's with a collection agency?
+
+- intent: faq/consequences_of_invalid_dispute
+  examples: |
+    - What are the consequences of a debt dispute being deemed invalid?
+    - If my dispute is considered invalid, what happens next?
+    - What are the potential outcomes of an unsuccessful debt dispute?
+    - How does Last Demand handle disputes that are not accepted?
+
+- intent: faq/request_payment_history
+  examples: |
+    - Can I request a payment history for the debt in question?
+    - How can I obtain a payment history for my debt with Last Demand?
+    - Is it possible to access my payment records from Last Demand?
+    - What's the process for getting a payment history for my debt?
+
+- intent: faq/statute_of_limitations
+  examples: |
+    - Is there a statute of limitations on debt collection with Last Demand?
+    - What's the time limit for debt collection by Last Demand?
+    - Are there legal restrictions on how long Last Demand can collect a debt?
+    - Can Last Demand pursue old debts past a certain time frame?
+
+- intent: faq/additional_information_about_services
+  examples: |
+    - Can I receive additional information about Last Demand's services?
+    - How can I learn more about the services offered by Last Demand?
+    - Is there detailed information available about Last Demand's offerings?
+    - Where can I find comprehensive information on Last Demand?
+
+- intent: faq/debt_already_paid_off
+  examples: |
+    - What should I do if I believe the debt has already been paid off?
+    - If I think I've paid off the debt, what's the next step?
+    - How do I address a situation where I believe the debt is already settled?
+    - What actions should I take if I'm certain the debt is paid?
+
+- intent: faq/disagree_debt_determination
+  examples: |
+    - What can I do if I disagree with Last Demand's decision on my debt dispute?
+    - How to challenge Last Demand's determination of my debt dispute?
+    - Disputing Last Demand's decision on my debt dispute.
+    - Options for disagreement with Last Demand's debt dispute decision.
+    - What are my rights if I don't agree with Last Demand's debt dispute resolution?
+
+- intent: faq/request_settlement_agreement
+  examples: |
+    - How can I ask for a written settlement agreement from Last Demand?
+    - Requesting a written settlement agreement with Last Demand.
+    - How to obtain a settlement agreement in writing from Last Demand?
+    - Can I get a written settlement offer from Last Demand?
+    - Requesting a written agreement for settling with Last Demand.
+
+- intent: faq/consequences_of_refusing_payment
+  examples: |
+    - Consequences of not paying a debt pursued by Last Demand.
+    - What are the results of refusing to pay a debt Last Demand is after?
+    - Refusing to pay a debt being pursued by Last Demand.
+    - What if I decline to make a payment on a debt Last Demand is chasing?
+    - Effects of not paying a debt that Last Demand is trying to collect.
+
+- intent: faq/dispute_debt_after_complaint
+  examples: |
+    - Can I still dispute a debt with Last Demand after filing a complaint with a regulatory agency?
+    - Disputing a debt with Last Demand after lodging a complaint with a regulatory agency.
+    - What to do if I've already filed a complaint with a regulatory agency but want to dispute the debt with Last Demand?
+    - Disputing a debt with Last Demand post-complaint to a regulatory agency.
+    - Is it possible to challenge a debt with Last Demand after reporting it to a regulatory agency?
+
+- intent: faq/handling_charged_off_debts
+  examples: |
+    - What is Last Demand's approach to charged-off debts by the original creditor?
+    - Dealing with debts charged off by the original creditor at Last Demand.
+    - How does Last Demand manage debts that have been charged off by the original creditor?
+    - Handling charged-off debts from the original creditor at Last Demand.
+    - Last Demand's procedure for charged-off debts from the original creditor.
+
+- intent: faq/multiple_final_notices
+  examples: |
+    - What steps should I take if I get multiple Final Notices for the same debt from various collection agencies?
+    - Handling multiple Final Notices for the same debt from different collection agencies.
+    - Dealing with numerous Final Notices from different collection agencies for the same debt.
+    - What to do when receiving several Final Notices for the same debt from different collection agencies.
+    - Coping with multiple Final Notices from different collection agencies for the same debt.
+
+- intent: faq/assistance_with_secured_loans
+  examples: |
+    - Does Last Demand provide assistance for debts related to secured loans, such as mortgages or car loans?
+    - Help with debts tied to secured loans like mortgages or car loans at Last Demand.
+    - Can I get support from Last Demand for secured loan debts like mortgages or car loans?
+    - Last Demand's services for debts involving secured loans like mortgages or car loans.
+    - Assistance available at Last Demand for debts on secured loans.
+
+- intent: faq/request_debt_documentation
+  examples: |
+    - How can I ask for documentation that breaks down the fees and interest on my debt from Last Demand?
+    - Requesting a breakdown of fees and interest on my debt from Last Demand.
+    - Is it possible to get documentation that shows the fees and interest on my debt from Last Demand?
+    - Documentation request for debt details, including fees and interest, from Last Demand.
+    - Asking for a document showing the fee and interest breakdown on my debt from Last Demand.
+
+- intent: faq/prevent_debt_progression
+  examples: |
+    - What can I do to stop a debt from reaching the Last Demand stage in the collection process?
+    - Preventing a debt from advancing to the Last Demand stage in collections.
+    - Steps to avoid a debt going to Last Demand in the collection process.
+    - How to halt a debt from progressing to Last Demand in collections.
+    - Preventing a debt from reaching Last Demand during collections.
+
+- intent: faq/dispute_identity_theft_debt
+  examples: |
+    - How do I dispute a debt with Last Demand if I suspect it's the result of identity theft?
+    - Disputing a debt with Last Demand due to suspected identity theft.
+    - Can I challenge a debt with Last Demand if I think it's a result of identity theft?
+    - Dealing with a debt that may be the result of identity theft at Last Demand.
+    - Dispute process for debts believed to be a result of identity theft at Last Demand.
+
+- intent: faq/verify_legitimacy_of_debt
+  examples: |
+    - How can I verify the legitimacy of a debt being pursued by Last Demand?
+    - Confirming the authenticity of a debt pursued by Last Demand.
+    - Ensuring a debt's legitimacy when Last Demand is involved.
+    - What steps can I take to check if a debt pursued by Last Demand is legitimate?
+    - Validating a debt when Last Demand is the collector.
+
+- intent: faq/dispute_billing_error
+  examples: |
+    - Can I dispute a debt with Last Demand if I believe it's the result of a billing error?
+    - Challenging a debt with Last Demand due to a billing error.
+    - Disputing a debt when Last Demand claims it's a billing error.
+    - What to do if I think a debt is the result of a billing mistake and Last Demand is collecting it?
+    - Disputing a debt for billing inaccuracies with Last Demand.
+
+- intent: faq/respond_to_final_notice_timeframe
+  examples: |
+    - What is the typical timeframe for responding to a Last Demand Final Notice?
+    - How long do I have to respond to a Final Notice from Last Demand?
+    - Timeframe for addressing a Final Notice issued by Last Demand.
+    - Responding within the deadline to a Final Notice from Last Demand.
+    - Last Demand Final Notice response time.
+
+- intent: faq/impact_on_credit_report
+  examples: |
+    - How does the debt dispute process with Last Demand impact my credit report?
+    - Will my credit report be affected by a debt dispute with Last Demand?
+    - Impact of Last Demand debt dispute on my credit score.
+    - Credit report consequences during a dispute with Last Demand.
+    - Last Demand debt dispute and credit report changes.
+
+- intent: faq/dispute_after_bankruptcy
+  examples: |
+    - Can I dispute a debt with Last Demand if I've declared bankruptcy?
+    - Disputing a debt with Last Demand after filing for bankruptcy.
+    - Challenging a debt during bankruptcy proceedings with Last Demand.
+    - Debt dispute options after bankruptcy when Last Demand is involved.
+    - Disputing a debt post-bankruptcy with Last Demand.
+
+- intent: faq/business_related_debts
+  examples: |
+    - Can Last Demand assist with business-related debts or commercial accounts?
+    - Handling business debts and commercial accounts at Last Demand.
+    - Last Demand's services for business-related debts.
+    - Assistance with corporate debt collection by Last Demand.
+    - Commercial account debt and Last Demand's involvement.
+
+- intent: faq/received_final_notice_after_payment
+  examples: |
+    - What should I do if I receive a Final Notice for a debt that I've already paid?
+    - Handling a Final Notice for a paid debt from Last Demand.
+    - Receiving a Final Notice after clearing a debt with Last Demand.
+    - Dealing with Final Notices for debts that are already paid off.
+    - Final Notice for a debt I've settled with Last Demand.
+
+- intent: faq/dispute_time_barred_debt
+  examples: |
+    - Can I dispute a debt with Last Demand if I believe it's time-barred or beyond the statute of limitations?
+    - Challenging a debt as time-barred with Last Demand.
+    - Disputing a debt based on the statute of limitations with Last Demand.
+    - Debt dispute for a debt claimed to be beyond the legal time limit with Last Demand.
+    - Contesting a debt that's supposedly past the statute of limitations with Last Demand.
+
+- intent: faq/track_debt_dispute_progress
+  examples: |
+    - How can I track the progress of my debt dispute with Last Demand?
+    - Monitoring the status of a debt dispute with Last Demand.
+    - Keeping tabs on a dispute with Last Demand for a debt.
+    - Checking the progress of my debt dispute with Last Demand.
+    - Tracking a debt dispute with Last Demand.
+
+- intent: faq/request_authority_documentation
+  examples: |
+    - Can I request documentation from Last Demand showing their authority to collect the debt?
+    - Asking Last Demand for proof of their authority to collect the debt.
+    - Requesting documentation regarding Last Demand's authority to collect a debt.
+    - Seeking evidence of Last Demand's right to collect a specific debt.
+    - Demanding proof of Last Demand's debt collection authority.
